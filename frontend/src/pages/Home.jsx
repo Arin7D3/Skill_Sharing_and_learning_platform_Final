@@ -303,14 +303,14 @@ export default function Home() {
       >
         {/* Background Image */}
         <motion.img
-          src="/hero.jpg"
+          src="/skill_sharing_workplace.jpg"
           alt="Inspire Creativity"
           className="absolute inset-0 w-full h-full object-cover"
           initial={{ scale: 1.2 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           onError={(e) => {
-            console.error("Failed to load hero image at /hero.jpg. Check if the file exists in the public folder.");
+            console.error("Failed to load hero image at /skill_sharing_workplace.jpg. Check if the file exists in the public folder.");
             e.target.src = "https://via.placeholder.com/1920x1080?text=Hero+Image+Not+Found"; // Fallback image
           }}
         />
