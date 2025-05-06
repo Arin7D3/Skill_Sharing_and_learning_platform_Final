@@ -31,7 +31,7 @@ public class PostController {
 
     @Autowired
     private PostService postService;
-
+    //create post
     @PostMapping
     public ResponseEntity<?> createPost(
             @RequestHeader("Authorization") String authHeader,
