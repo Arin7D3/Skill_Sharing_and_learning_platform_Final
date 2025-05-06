@@ -1,5 +1,5 @@
 package com.skillsphere.backend.model;
-//model
+
 import jakarta.persistence.*;
 import lombok.Data;
 
