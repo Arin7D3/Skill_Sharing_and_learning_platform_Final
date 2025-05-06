@@ -4,7 +4,7 @@ import com.skillsphere.backend.model.Comment;
 import com.skillsphere.backend.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-//service
+
 @Service
 public class CommentService {
     @Autowired
