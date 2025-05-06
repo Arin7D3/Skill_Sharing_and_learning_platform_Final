@@ -1,23 +1,79 @@
-# Skill-Sharing Posts and Subscriptions Module
+# Skill-Sharing & Learning Platform
 
-This module allows users to post skills they want to share, view shared posts, and subscribe to other users’ skill posts.
+## Overview
 
-## 💡 Features
+In response to a growing need for interactive and engaging learning platforms, our team has embarked on a mission to build a **Skill-Sharing and Learning Platform**. This client web application provides users with a dedicated space to share their skills, track learning progress, create structured learning plans, and engage with fellow learners.
 
-- Create/edit/delete skill-sharing posts
-- Tag posts with categories (e.g., coding, cooking)
-- Subscribe to skill posts for updates
-- View posts from followed users
+By leveraging **Spring Boot (Java)** for the backend and **React** for the frontend, we ensure seamless interactions, robust security, and system scalability. User authentication is managed using **OAuth 2.0**, allowing secure sign-in via existing social media accounts.
 
-## 🧾 Technologies Used
+---
 
-- Spring Boot (REST APIs)
-- JPA with Many-to-Many relationship for subscriptions
-- React for displaying skill feeds and subscriptions
-- PostgreSQL/MySQL
+## ✨ Key Features
 
-## 🔮 Future Enhancements
+### 1. Authentication & User Management & comments
+- **OAuth 2.0 Integration**: Enables users to securely log in using their social media accounts.
+- **Spring Security**: Ensures that user data and interactions are protected.
+- **User Profiles**: Each user has a personalized profile showcasing:
+  - Shared skills and expertise
+  - Followed users and followers
+- **Social Features**:
+  - Follow/unfollow functionality
+  - Instant notifications for likes, comments, and followers
+- **comments**:
+  -Include CRUD Operation
 
-- In-app messaging between sharer and learner
-- Subscription-based notifications
-- Skill rating and feedback system
+### 2. Learning Plans & Learning Progress
+- **Structured Learning Plans**:
+  - Users can define and organize plans with key topics, resources, and completion goals.
+- **Progress Tracking**:
+  - Users can share updates with predefined templates for consistency.
+  - Updates include completed lessons, new skills, and milestone achievements.
+- **Editing Support**:
+  - Learning plans can be revised and updated based on progress and changing goals.
+
+### 3. Skill Sharing & Engagement
+- **Project-Based Skill Posts**:
+  - Users can post their work with up to 3 images or short videos (≤ 30 seconds).
+  - Each post includes a detailed description of the showcased skills.
+- **Subscription**:
+  - Admin can add subscription plans
+- **Notifications**:
+  - Real-time alerts for interactions (likes, comments, followers) ensure users stay updated.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: React.js
+- **Backend**: Spring Boot (Java)
+- **Authentication**: OAuth 2.0 + Spring Security
+- **Database**: MySQL / PostgreSQL (configurable)
+- **Cloud & Hosting**: TBD (e.g., Firebase, AWS, or Heroku)
+
+---
+
+## 🚀 Vision
+
+This platform aims to **empower users** by providing a structured and social learning environment where they can:
+
+- Document their learning journey
+- Share skills and experiences with a wider audience
+- Gain recognition and inspiration from peers
+
+Together, we are building more than a platform — we are cultivating a vibrant, collaborative learning community.
+
+---
+
+## 📌 Future Enhancements
+
+- AI-driven skill recommendations
+- Collaborative learning spaces or groups
+- Integration with third-party learning resources (e.g., YouTube, Coursera)
+- Enhanced analytics and personalized dashboards
+
+---
+
+## 📫 Contact & Contributions
+
+Have feedback or want to contribute? Feel free to reach out or fork this repository and open a pull request. We’d love to have you onboard!
+
