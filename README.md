@@ -1,40 +1,79 @@
-# 🧠 Skill Post Sharing and Follower Management Module
+# Skill-Sharing & Learning Platform
 
-This module supports user-driven content creation and social connectivity within the platform. Users can share their skills and experiences, and others can follow them to build a personalized feed of relevant content. It encourages content creators and learners to engage in a dynamic skill-sharing community.
+## Overview
 
----
+In response to a growing need for interactive and engaging learning platforms, our team has embarked on a mission to build a **Skill-Sharing and Learning Platform**. This client web application provides users with a dedicated space to share their skills, track learning progress, create structured learning plans, and engage with fellow learners.
 
-## ✨ Features
-
-### ✍️ Skill Sharing Posts
-- Users can create detailed posts to share their skills, experiences, or tutorials.
-- Each post can include tags, descriptions, and optionally media (images, links).
-- Posts are editable and deletable by the author.
-- All users can browse posts by category or popularity.
-
-### 🤝 Follow System
-- Users can follow/unfollow other users to receive updates on new skill posts.
-- The “Following Feed” shows posts only from followed users.
-- Each user can manage their followers/following list.
+By leveraging **Spring Boot (Java)** for the backend and **React** for the frontend, we ensure seamless interactions, robust security, and system scalability. User authentication is managed using **OAuth 2.0**, allowing secure sign-in via existing social media accounts.
 
 ---
 
-## 🛠 Technologies Used
+## ✨ Key Features
 
-- Java 17 / Spring Boot
-- Spring Web + Spring Security (JWT)
-- JPA (Hibernate) for ORM
-- PostgreSQL / MySQL
-- React (Frontend feed UI)
-- OpenAPI (Swagger) for documentation
+### 1. Authentication & User Management & comments
+- **OAuth 2.0 Integration**: Enables users to securely log in using their social media accounts.
+- **Spring Security**: Ensures that user data and interactions are protected.
+- **User Profiles**: Each user has a personalized profile showcasing:
+  - Shared skills and expertise
+  - Followed users and followers
+- **Social Features**:
+  - Follow/unfollow functionality
+  - Instant notifications for likes, comments, and followers
+- **comments**:
+  -Include CRUD Operation
+
+### 2. Learning Plans & Learning Progress
+- **Structured Learning Plans**:
+  - Users can define and organize plans with key topics, resources, and completion goals.
+- **Progress Tracking**:
+  - Users can share updates with predefined templates for consistency.
+  - Updates include completed lessons, new skills, and milestone achievements.
+- **Editing Support**:
+  - Learning plans can be revised and updated based on progress and changing goals.
+
+### 3. Skill Sharing & Engagement
+- **Project-Based Skill Posts**:
+  - Users can post their work with up to 3 images or short videos (≤ 30 seconds).
+  - Each post includes a detailed description of the showcased skills.
+- **Subscription**:
+  - Admin can add subscription plans
+- **Notifications**:
+  - Real-time alerts for interactions (likes, comments, followers) ensure users stay updated.
 
 ---
 
-## 🚀 Future Enhancements
+## 🛠 Tech Stack
 
-- Tag-based post filtering and feed customization
-- Content recommendation based on skills of followed users
-- Analytics for creators: post reach, followers gained
-- Notifications for when followed users post new content
+- **Frontend**: React.js
+- **Backend**: Spring Boot (Java)
+- **Authentication**: OAuth 2.0 + Spring Security
+- **Database**: MySQL / PostgreSQL (configurable)
+- **Cloud & Hosting**: TBD (e.g., Firebase, AWS, or Heroku)
 
 ---
+
+## 🚀 Vision
+
+This platform aims to **empower users** by providing a structured and social learning environment where they can:
+
+- Document their learning journey
+- Share skills and experiences with a wider audience
+- Gain recognition and inspiration from peers
+
+Together, we are building more than a platform — we are cultivating a vibrant, collaborative learning community.
+
+---
+
+## 📌 Future Enhancements
+
+- AI-driven skill recommendations
+- Collaborative learning spaces or groups
+- Integration with third-party learning resources (e.g., YouTube, Coursera)
+- Enhanced analytics and personalized dashboards
+
+---
+
+## 📫 Contact & Contributions
+
+Have feedback or want to contribute? Feel free to reach out or fork this repository and open a pull request. We’d love to have you onboard!
+
