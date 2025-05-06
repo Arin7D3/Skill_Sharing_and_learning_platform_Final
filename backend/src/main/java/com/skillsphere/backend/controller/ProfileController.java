@@ -4,7 +4,7 @@ import com.skillsphere.backend.model.User;
 import com.skillsphere.backend.service.ProfileService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+//profile
 @RestController
 @RequestMapping("/api/profile")
 public class ProfileController {
