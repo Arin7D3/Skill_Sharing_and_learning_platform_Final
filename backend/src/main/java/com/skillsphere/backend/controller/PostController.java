@@ -82,7 +82,7 @@ public class PostController {
             return ResponseEntity.notFound().build();
         }
     }
-    //update post 
+    //update post  sdgg
     @PutMapping("/{id}")
     public ResponseEntity<?> updatePost(
             @PathVariable Long id,
