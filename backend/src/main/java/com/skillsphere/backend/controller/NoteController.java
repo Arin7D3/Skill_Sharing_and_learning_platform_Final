@@ -26,7 +26,7 @@ public class NoteController {
     public ResponseEntity<List<Note>> getUserNotes(@PathVariable Long userId) {
         return ResponseEntity.ok(noteService.getUserNotes(userId));
     }
-
+//
     @PutMapping("/{noteId}")
     public ResponseEntity<Note> updateNote(@PathVariable Long noteId, @RequestBody NoteRequest request, @RequestParam Long userId) {
         Note note = noteService.updateNote(noteId, request.getTitle(), request.getContent(), userId);
