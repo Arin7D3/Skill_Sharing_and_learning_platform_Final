@@ -86,7 +86,7 @@ public class LearningPlanController {
             return ResponseEntity.status(500).body(null);
         }
     }
-
+//status
     @PutMapping("/{id}/status")
     public ResponseEntity<LearningPlanDTO> updateLearningPlanStatus(
             @PathVariable Long id,
