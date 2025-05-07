@@ -103,7 +103,7 @@ public class LearningPlanController {
             return ResponseEntity.status(500).body(null);
         }
     }
-//delete
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteLearningPlan(
             @PathVariable Long id,
