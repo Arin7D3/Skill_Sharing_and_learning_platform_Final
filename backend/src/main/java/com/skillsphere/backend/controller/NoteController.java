@@ -32,7 +32,7 @@ public class NoteController {
         Note note = noteService.updateNote(noteId, request.getTitle(), request.getContent(), userId);
         return ResponseEntity.ok(note);
     }
-
+//
     @DeleteMapping("/{noteId}")
     public ResponseEntity<Void> deleteNote(@PathVariable Long noteId, @RequestParam Long userId) {
         noteService.deleteNote(noteId, userId);
@@ -49,3 +49,4 @@ class NoteRequest {
     public String getContent() { return content; }
     public void setContent(String content) { this.content = content; }
 }
+//
