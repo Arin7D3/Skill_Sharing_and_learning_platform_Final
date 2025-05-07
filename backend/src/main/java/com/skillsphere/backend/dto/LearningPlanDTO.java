@@ -4,7 +4,7 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
-//
+//class
 @Data
 public class LearningPlanDTO {
     private Long id;
