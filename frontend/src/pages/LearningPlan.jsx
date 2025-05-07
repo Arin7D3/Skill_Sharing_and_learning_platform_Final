@@ -496,7 +496,7 @@ export default function LearningPlan() {
                     </AnimatePresence>
                   </div>
                 </div>
-
+//
                 <div className="p-4">
                   <h3 className={`text-lg font-medium ${theme === "dark" ? "text-white" : "text-gray-900"} truncate`}>{plan.title}</h3>
                   <p className={`text-sm ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>E-Learning</p>
