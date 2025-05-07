@@ -18,7 +18,7 @@ const placeholderThumbnails = [
 
 
 const defaultThumbnail = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop";
-
+//set an theme
 export default function LearningPlan() {
   const { user, theme, logout, setShowAuthForm, setIsLogin } = useContext(AuthContext);
   const navigate = useNavigate();
