@@ -130,6 +130,7 @@ export default function LearningPlan() {
     return isValidProtocol && imageExtensions.test(url);
   };
 
+  //images
   const handleImageLoad = (url) => {
     return new Promise((resolve) => {
       const img = new Image();
