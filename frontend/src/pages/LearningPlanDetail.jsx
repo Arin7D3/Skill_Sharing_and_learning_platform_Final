@@ -148,6 +148,8 @@ export default function LearningPlanDetail() {
                 Start Studying
               </motion.button>
             )}
+
+            // inprogress
             {plan.status === "IN_PROGRESS" && (
               <motion.button
                 variants={buttonVariants}
