@@ -25,6 +25,7 @@ public class LearningPlanController {
             @RequestBody LearningPlanDTO dto,
             @RequestHeader("Authorization") String authHeader) {
         try {
+            //
             if (dto.getTitle() == null || dto.getTitle().isEmpty()) {
                 logger.error("Title is required");
                 return ResponseEntity.status(400).body(Map.of("message", "Title is required"));
