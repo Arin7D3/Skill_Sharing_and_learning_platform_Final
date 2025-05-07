@@ -75,6 +75,7 @@ export default function LearningPlanDetail() {
     tap: { scale: 0.95 },
   };
 
+  // update the button
   if (loading) {
     return (
       <div className="container mx-auto px-4 py-8">
