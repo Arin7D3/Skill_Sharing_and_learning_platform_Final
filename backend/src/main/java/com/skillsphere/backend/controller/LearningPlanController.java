@@ -91,7 +91,8 @@ public class LearningPlanController {
     public ResponseEntity<LearningPlanDTO> updateLearningPlanStatus(
             @PathVariable Long id,
             @RequestBody Map<String, String> body,
-            @RequestHeader("Authorization") String authHeader) {
+            @RequestHeader("Authorization") String authHeader)
+             {
         try {
             String status = body.get("status");
             String token = authHeader.replace("Bearer ", "");
@@ -103,7 +104,8 @@ public class LearningPlanController {
             return ResponseEntity.status(500).body(null);
         }
     }
-
+    
+//excecption
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteLearningPlan(
             @PathVariable Long id,
