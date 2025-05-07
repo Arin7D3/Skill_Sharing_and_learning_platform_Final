@@ -4,7 +4,7 @@ import { createLearningPlan, getAllLearningPlans, updateLearningPlan, updateLear
 import { motion, AnimatePresence } from "framer-motion";
 import { PlusIcon, XMarkIcon, ChevronDownIcon, EyeSlashIcon, FlagIcon, PlayIcon } from "@heroicons/react/24/outline";
 import { useNavigate } from "react-router-dom";
-
+//images
 const placeholderThumbnails = [
   "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop",
@@ -15,6 +15,8 @@ const placeholderThumbnails = [
 ];
 
 // UI
+
+
 const defaultThumbnail = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop";
 
 export default function LearningPlan() {
