@@ -14,6 +14,7 @@ const placeholderThumbnails = [
   "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop",
 ];
 
+// UI
 const defaultThumbnail = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop";
 
 export default function LearningPlan() {
