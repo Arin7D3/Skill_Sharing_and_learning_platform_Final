@@ -21,7 +21,7 @@ public class NoteController {
         Note note = noteService.createNote(userId, request.getTitle(), request.getContent());
         return ResponseEntity.ok(note);
     }
-
+//
     @GetMapping("/user/{userId}")
     public ResponseEntity<List<Note>> getUserNotes(@PathVariable Long userId) {
         return ResponseEntity.ok(noteService.getUserNotes(userId));
