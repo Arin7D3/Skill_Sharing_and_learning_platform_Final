@@ -27,7 +27,7 @@ public class QuizController {
         return ResponseEntity.ok(quizService.getAllQuizzes());
     }
 }
-
+//
 class QuizRequest {
     private String title;
     private List<Question> questions;
