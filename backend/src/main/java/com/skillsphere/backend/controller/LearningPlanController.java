@@ -42,7 +42,7 @@ public class LearningPlanController {
         }
     }
 
-     //
+    
     @GetMapping
     public ResponseEntity<List<LearningPlanDTO>> getLearningPlans(
             @RequestHeader("Authorization") String authHeader) {
