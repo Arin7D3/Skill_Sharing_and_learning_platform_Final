@@ -637,6 +637,7 @@ export default function LearningPlan() {
               exit="exit"
               className={`w-full max-w-4xl p-8 rounded-2xl shadow-2xl ${theme === "dark" ? "bg-gray-800 text-gray-200" : "bg-white text-gray-900"}`}
             >
+              // change the colors
               <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold">In-Progress Learning Plans</h2>
                 <motion.button
