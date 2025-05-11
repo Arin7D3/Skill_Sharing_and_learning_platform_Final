@@ -1,4 +1,4 @@
-// SubscriptionPlanRepository.java..
+// SubscriptionPlanRepository.java.
 package com.skillsphere.backend.repository;
 
 import com.skillsphere.backend.model.SubscriptionPlan;
