@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface ReactionRepository extends JpaRepository<Reaction, Long> {
     Optional<Reaction> findByPostIdAndUserId(Long postId, Long userId);
     List<Reaction> findByPostId(Long postId);
-
+//
     @Modifying
     @Query("DELETE FROM Reaction r WHERE r.post.id = :postId")
     void deleteByPostId(Long postId);
