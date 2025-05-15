@@ -89,7 +89,7 @@ public class UploadController {
                 return ResponseEntity.status(500).body(Map.of("message", "Server error: Failed to save file"));
             }
 
-            // Construct URL
+            // Construct URL port
             String fileUrl = "http://localhost:8080/uploads/" + newFilename;
             logger.info("Uploaded file accessible at: {}", fileUrl);
 
