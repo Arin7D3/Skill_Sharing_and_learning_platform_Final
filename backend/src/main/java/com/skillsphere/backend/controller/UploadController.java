@@ -52,6 +52,7 @@ public class UploadController {
                 return ResponseEntity.status(400).body(Map.of("message", "File size exceeds 5MB limit"));
             }
 
+            
             // Define upload path
             Path uploadPath = Paths.get(System.getProperty("user.dir"), UPLOAD_DIR).normalize();
             logger.debug("Upload path: {}", uploadPath);
