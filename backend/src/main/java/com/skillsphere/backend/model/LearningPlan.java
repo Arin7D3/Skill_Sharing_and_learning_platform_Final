@@ -35,6 +35,7 @@ public class LearningPlan {
     private LocalDateTime updatedAt;
 
     @ManyToOne
+    
     @JoinColumn(name = "user_id")
     @JsonBackReference
     private User user;
