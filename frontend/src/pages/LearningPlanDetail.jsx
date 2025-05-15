@@ -7,9 +7,11 @@ import { motion } from "framer-motion";
 const defaultThumbnail = "https://via.placeholder.com/150?text=No+Image";
 
 export default function LearningPlanDetail() {
-  const { id } = useParams();
+  const { id } = useParams();          //Get the ID from the URL
   const { user, theme, logout, setShowAuthForm, setIsLogin } = useContext(AuthContext);
-  const navigate = useNavigate();
+  const navigate = useNavigate();             //To programmatically navigate
+  
+  //State variables
   const [plan, setPlan] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -20,12 +22,12 @@ export default function LearningPlanDetail() {
       if (!user?.token) {
         throw new Error("Please log in to view this learning plan");
       }
-      const plans = await getLearningPlans(user.token);
-      const selectedPlan = plans.find((p) => p.id === parseInt(id));
+      const plans = await getLearningPlans(user.token); //Fetch all plans
+      const selectedPlan = plans.find((p) => p.id === parseInt(id)); //Get matching ID
       if (!selectedPlan) {
         throw new Error("Learning plan not found");
       }
-      setPlan(selectedPlan);
+      setPlan(selectedPlan); //Save selected plan in state
     } catch (err) {
       console.error("Failed to load learning plan:", err);
       if (err.response && err.response.status === 401) {
