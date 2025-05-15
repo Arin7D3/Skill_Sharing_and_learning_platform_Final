@@ -13,7 +13,7 @@ public class ProfileController {
     public ProfileController(ProfileService profileService) {
         this.profileService = profileService;
     }
-//fsge
+
     @GetMapping("/{userId}")
     public ResponseEntity<User> getUserProfile(@PathVariable Long userId) {
         User user = profileService.getUserProfile(userId);
