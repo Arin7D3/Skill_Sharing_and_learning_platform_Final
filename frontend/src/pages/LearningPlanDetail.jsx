@@ -4,7 +4,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { getLearningPlans, updateLearningPlanStatus } from "../api";
 import { motion } from "framer-motion";
 
-// color change
 const defaultThumbnail = "https://via.placeholder.com/150?text=No+Image";
 
 export default function LearningPlanDetail() {
