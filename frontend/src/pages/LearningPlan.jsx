@@ -1,5 +1,7 @@
 import { useState, useEffect, useContext } from "react";
-import { AuthContext } from "../context/AuthContext";
+
+// Provides user authentication data and handlers
+import { AuthContext } from "../context/AuthContext";  
 import { createLearningPlan, getAllLearningPlans, updateLearningPlan, updateLearningPlanStatus, deleteLearningPlan, uploadImage } from "../api";
 import { motion, AnimatePresence } from "framer-motion";
 import { PlusIcon, XMarkIcon, ChevronDownIcon, EyeSlashIcon, FlagIcon, PlayIcon } from "@heroicons/react/24/outline";
