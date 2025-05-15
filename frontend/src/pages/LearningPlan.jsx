@@ -269,7 +269,7 @@ export default function LearningPlan() {
     }
   };
 
-  //laaunch
+  //launch
   const handleLaunch = async (plan) => {
     try {
       const updatedPlan = await updateLearningPlanStatus(plan.id, "IN_PROGRESS", user.token);
