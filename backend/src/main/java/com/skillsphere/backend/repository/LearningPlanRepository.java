@@ -10,5 +10,5 @@ import com.skillsphere.backend.model.User;
 @Repository
 public interface LearningPlanRepository extends JpaRepository<LearningPlan, Long> {
     List<LearningPlan> findByUser(User user);
-    List<LearningPlan> findByStatus(String status); // Fetch plans by status
+    List<LearningPlan> findByStatus(String status); // Fetch plan by status 
 }
