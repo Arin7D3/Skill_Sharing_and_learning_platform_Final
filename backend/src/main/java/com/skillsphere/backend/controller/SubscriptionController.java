@@ -1,6 +1,6 @@
 // SubscriptionController.java
 package com.skillsphere.backend.controller;
-//
+
 import com.skillsphere.backend.model.Subscription;
 import com.skillsphere.backend.model.SubscriptionPlan;
 import com.skillsphere.backend.service.SubscriptionService;
