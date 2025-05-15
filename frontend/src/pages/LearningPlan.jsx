@@ -45,6 +45,7 @@ export default function LearningPlan() {
   const [filterBy, setFilterBy] = useState("all"); // Default to all plans
   const [hiddenPlans, setHiddenPlans] = useState(new Set());
 
+  //gets plans for the logged-in user
   const fetchLearningPlans = async () => {
     setLoading(true);
     try {
@@ -70,6 +71,7 @@ export default function LearningPlan() {
     }
   };
 
+  //fetches all plans with status "IN_PROGRESS"
   const fetchAllLearningPlans = async () => {
     try {
       if (!user?.token) {
