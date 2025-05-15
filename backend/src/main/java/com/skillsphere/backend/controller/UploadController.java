@@ -98,7 +98,7 @@ public class UploadController {
             return ResponseEntity.ok(response);
         } catch (Exception e) {
             logger.error("Unexpected error during file upload: {}", e.getMessage(), e);
-            return ResponseEntity.status(500).body(Map.of("message", "Internal server error: " + e.getMessage()));
+            return ResponseEntity.status(500).body(Map.of("message", "Internal server error occure: " + e.getMessage()));
         }
     }
 
