@@ -53,7 +53,7 @@ public class UploadController {
             }
 
             
-            // Define upload path
+            // Define uploaded path
             Path uploadPath = Paths.get(System.getProperty("user.dir"), UPLOAD_DIR).normalize();
             logger.debug("Upload path: {}", uploadPath);
 
