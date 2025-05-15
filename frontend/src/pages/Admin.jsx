@@ -4,7 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 import axios from "axios";
 import { motion } from "framer-motion";
 import { Navigate } from "react-router-dom";
-//
+
 export default function Admin() {
   const { user, theme } = useContext(AuthContext);
   const [subscriptionPlans, setSubscriptionPlans] = useState([]);
