@@ -79,6 +79,7 @@ public class UploadController {
             Path filePath = uploadPath.resolve(newFilename).normalize();
             logger.debug("File path: {}", filePath);
 
+            
             // Save file
             try {
                 Files.write(filePath, file.getBytes()); // Fixed: Swapped arguments
