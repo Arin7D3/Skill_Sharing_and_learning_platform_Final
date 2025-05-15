@@ -13,7 +13,7 @@ export default function LearningPlanDetail() {
   const [plan, setPlan] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
- //plan fetch
+ 
   const fetchPlan = async () => {
     setLoading(true);
     try {
