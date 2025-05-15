@@ -20,6 +20,7 @@ public class LearningPlanController {
     @Autowired
     private LearningPlanService learningPlanService;
 
+    //Create Learning Plan
     @PostMapping
     public ResponseEntity<Map<String, Object>> createLearningPlan(
             @RequestBody LearningPlanDTO dto,
@@ -43,7 +44,7 @@ public class LearningPlanController {
         }
     }
 
-    
+    //Get Current User's Learning Plans
     @GetMapping
     public ResponseEntity<List<LearningPlanDTO>> getLearningPlans(
             @RequestHeader("Authorization") String authHeader) {
@@ -58,6 +59,7 @@ public class LearningPlanController {
         }
     }
 
+    //Get All Learning Plans
     @GetMapping("/all")
     public ResponseEntity<List<LearningPlanDTO>> getAllLearningPlans(
             @RequestParam(value = "status", required = false) String status) {
@@ -70,7 +72,7 @@ public class LearningPlanController {
             return ResponseEntity.status(500).body(null);
         }
     }
-//
+    // Update learning plan
     @PutMapping("/{id}")
     public ResponseEntity<LearningPlanDTO> updateLearningPlan(
             @PathVariable Long id,
@@ -86,7 +88,7 @@ public class LearningPlanController {
             return ResponseEntity.status(500).body(null);
         }
     }
-//status
+// update status
     @PutMapping("/{id}/status")
     public ResponseEntity<LearningPlanDTO> updateLearningPlanStatus(
             @PathVariable Long id,
@@ -105,7 +107,8 @@ public class LearningPlanController {
         }
     }
     
-//excecption
+//Delete Learning Plan
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteLearningPlan(
             @PathVariable Long id,
