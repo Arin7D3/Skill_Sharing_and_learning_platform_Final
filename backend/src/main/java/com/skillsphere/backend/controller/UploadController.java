@@ -73,7 +73,7 @@ public class UploadController {
                 return ResponseEntity.status(500).body(Map.of("message", "Server error: Failed to create upload directory"));
             }
 
-            // Generate unique filename
+            // Generate unique filenames
             String extension = originalFilename.substring(originalFilename.lastIndexOf("."));
             String newFilename = UUID.randomUUID().toString() + extension;
             Path filePath = uploadPath.resolve(newFilename).normalize();
