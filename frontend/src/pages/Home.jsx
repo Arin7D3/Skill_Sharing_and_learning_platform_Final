@@ -326,7 +326,7 @@ export default function Home() {
             >
               Inspire Creativity in Others.
             </motion.h1>
-            {/* Subheading */}
+            {/* Sub heading */}
             <motion.p
               variants={heroTextVariants}
               initial="hidden"

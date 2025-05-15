@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { createPost, getPosts, updatePost, deletePost } from "../api.js";
 import { motion } from "framer-motion";
-
+//
 export default function ShareSkills() {
   const { user, theme } = useContext(AuthContext);
   const [title, setTitle] = useState("");
