@@ -3,7 +3,7 @@ import { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import axios from "axios";
 import { motion } from "framer-motion";
-//
+
 export default function Subscriptions() {
   const { user, theme } = useContext(AuthContext);
   const [plans, setPlans] = useState([]);
