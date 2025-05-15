@@ -1,7 +1,7 @@
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-//
+
 function Footer() {
   const footerVariants = {
     hidden: { opacity: 0, y: 20 },
