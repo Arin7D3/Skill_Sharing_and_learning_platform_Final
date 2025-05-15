@@ -27,7 +27,7 @@ public class LearningPlan {
     private String thumbnailUrl; // New field for thumbnail URL
 
     @Column(name = "status")
-    private String status; // New field: "NOT_STARTED", "IN_PROGRESS", "COMPLETED"
+    private String status; //New field: "NOT_STARTED", "IN_PROGRESS", "COMPLETED"
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
