@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
-//
+
 @Entity
 @Table(name = "learning_plans")
 @Data
