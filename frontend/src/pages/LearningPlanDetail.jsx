@@ -3,9 +3,9 @@ import { AuthContext } from "../context/AuthContext";
 import { useParams, useNavigate } from "react-router-dom";
 import { getLearningPlans, updateLearningPlanStatus } from "../api";
 import { motion } from "framer-motion";
-//
+
 const defaultThumbnail = "https://via.placeholder.com/150?text=No+Image";
-//
+
 export default function LearningPlanDetail() {
   const { id } = useParams();
   const { user, theme, logout, setShowAuthForm, setIsLogin } = useContext(AuthContext);
