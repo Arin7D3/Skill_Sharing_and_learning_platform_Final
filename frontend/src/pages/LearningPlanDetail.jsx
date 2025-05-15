@@ -83,7 +83,6 @@ export default function LearningPlanDetail() {
     );
   }
 
-  // error plan
 
   if (error || !plan) {
     return (
