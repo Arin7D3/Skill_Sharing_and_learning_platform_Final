@@ -31,7 +31,7 @@ public class PostController {
 
     @Autowired
     private PostService postService;
-
+    //create post ewfef
     @PostMapping
     public ResponseEntity<?> createPost(
             @RequestHeader("Authorization") String authHeader,
@@ -82,7 +82,7 @@ public class PostController {
             return ResponseEntity.notFound().build();
         }
     }
-
+    //update post  hfdgfeyg
     @PutMapping("/{id}")
     public ResponseEntity<?> updatePost(
             @PathVariable Long id,
